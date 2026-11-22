@@ -115,7 +115,8 @@ section{padding:90px 5vw}
 /* ============ GURU ============ */
 .guru-section{background:#f5f8fd}
 .guru-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,215px),1fr));gap:clamp(.85rem,2vw,1.5rem)}
-.guru-empty{grid-column:1/-1;text-align:center;padding:2rem;color:var(--muted)}
+.guru-empty{grid-column:1/-1;display:grid;justify-items:center;gap:1rem;text-align:center;padding:clamp(1.5rem,5vw,3rem);color:var(--muted);background:#fff;border:1px dashed var(--border);border-radius:var(--radius)}
+.guru-empty img{border-radius:50%}
 .guru-info{overflow-wrap:anywhere}
 .guru-card{background:#fff;border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;transition:.25s;text-align:center}
 .guru-card:hover{transform:translateY(-6px);box-shadow:var(--shadow)}

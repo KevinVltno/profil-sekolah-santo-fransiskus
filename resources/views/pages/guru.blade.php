@@ -29,7 +29,10 @@
           </div>
         </div>
         @empty
-          <p class="guru-empty">Profil guru dan staf belum tersedia.</p>
+          <div class="guru-empty">
+            <img src="{{ asset('img/guru-placeholder.webp') }}" alt="" width="96" height="96" />
+            <p>Profil guru dan staf belum tersedia.</p>
+          </div>
         @endforelse
       </div>
     </div>
