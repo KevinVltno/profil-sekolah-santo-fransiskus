@@ -13,7 +13,7 @@ COPY . .
 RUN composer dump-autoload --no-dev --classmap-authoritative \
     && php artisan view:cache --no-interaction \
     && touch database/public-preview.sqlite \
-    && DB_CONNECTION=sqlite DB_DATABASE=/app/database/public-preview.sqlite php artisan migrate --force --seed --no-interaction
+    && DB_URL= DB_CONNECTION=sqlite DB_DATABASE=/app/database/public-preview.sqlite php artisan migrate --force --seed --no-interaction
 
 FROM base
 COPY --from=build /app /app
