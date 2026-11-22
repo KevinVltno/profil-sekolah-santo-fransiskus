@@ -1,6 +1,7 @@
 <?php
 
 return [
+    'school_public_preview' => env('SCHOOL_PUBLIC_PREVIEW', false),
 
     /*
     |--------------------------------------------------------------------------

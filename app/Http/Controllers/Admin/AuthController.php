@@ -10,11 +10,15 @@ class AuthController extends Controller
 {
     public function form()
     {
+        abort_if(config('app.school_public_preview'), 503, 'Panel sekolah sedang menunggu koneksi database.');
+
         return view('admin.login');
     }
 
     public function login(Request $request)
     {
+        abort_if(config('app.school_public_preview'), 503, 'Panel sekolah sedang menunggu koneksi database.');
+
         $cred = $request->validate([
             'username' => ['required', 'string', 'max:100'],
             'password' => ['required', 'string', 'max:255'],
