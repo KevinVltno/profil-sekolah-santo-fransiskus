@@ -6,6 +6,7 @@
     'crumb' => 'Fasilitas',
     'title' => 'Fasilitas Sekolah',
     'desc'  => 'Sarana yang mendukung siswa belajar, bermain, dan berkreasi setiap hari.',
+    'showImage' => false,
   ])
   <section><div class="inner">@include('partials.fas-list', ['items' => $items])</div></section>
 @endsection

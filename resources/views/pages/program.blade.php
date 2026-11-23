@@ -6,6 +6,7 @@
     'crumb' => 'Program',
     'title' => 'Program Kami',
     'desc'  => 'Dirancang untuk mengoptimalkan potensi setiap siswa secara menyeluruh.',
+    'showImage' => false,
   ])
 
   @php

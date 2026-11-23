@@ -6,6 +6,7 @@
     'crumb' => 'Profil Sekolah / Tentang Sekolah',
     'title' => 'Tentang Sekolah',
     'desc'  => 'Mengenal sejarah dan semangat SD Santo Fransiskus Sragen.',
+    'showImage' => false,
   ])
 
   @if ($sejarah)

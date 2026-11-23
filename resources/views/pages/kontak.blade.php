@@ -6,6 +6,7 @@
     'crumb' => 'Hubungi Kami',
     'title' => 'Hubungi Kami',
     'desc'  => 'Kami siap menyambut putra-putri Anda. Hubungi kami untuk informasi pendaftaran.',
+    'showImage' => false,
   ])
 
   <section>
