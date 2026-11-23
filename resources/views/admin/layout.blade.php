@@ -44,6 +44,7 @@
   </div>
   <nav class="sidebar-nav">
     <a href="{{ route('admin.dashboard') }}" class="nav-item {{ $pageKey === 'dashboard' ? 'active' : '' }}"><span class="ic"><i class="fa-solid fa-chart-column" aria-hidden="true"></i></span> Dashboard</a>
+    <a href="{{ route('admin.dashboard') }}#panduan-data-dummy" class="nav-item" onclick="closeSidebar()"><span class="ic"><i class="fa-solid fa-circle-question" aria-hidden="true"></i></span> Panduan Data Dummy</a>
     @foreach ($grup as $halaman => $items)
       <div class="nav-label">{{ $halaman }}</div>
       @foreach ($items as [$ic, $jd, $url, $k])

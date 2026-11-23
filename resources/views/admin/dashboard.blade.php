@@ -1,6 +1,22 @@
 @extends('admin.layout')
 
 @section('content')
+<section class="card" id="panduan-data-dummy" aria-labelledby="judul-panduan-data-dummy">
+  <div class="card-header">
+    <h2 id="judul-panduan-data-dummy">Panduan Menambahkan Data Dummy</h2>
+    <a class="btn-ghost" href="{{ asset('img/sekolah-placeholder.webp') }}" download>Unduh gambar contoh</a>
+  </div>
+  <div class="card-body dummy-guide">
+    <ol>
+      <li>Pilih menu konten di sidebar, misalnya <a href="{{ route('admin.konten.index', 'berita') }}">Berita</a> atau <a href="{{ route('admin.konten.index', 'beranda_galeri') }}">Galeri</a>, lalu klik <strong>+ Tambah</strong>.</li>
+      <li>Isi kolom bertanda bintang. Jika formulir meminta foto, unggah gambar contoh di atas atau gunakan file JPG, PNG, WebP, atau GIF berukuran maksimal 3 MB.</li>
+      <li>Klik <strong>Simpan</strong>, lalu buka halaman publik terkait untuk memeriksa hasilnya. Data contoh yang disimpan dapat dilihat oleh pengunjung situs.</li>
+      <li>Setelah selesai, gunakan <strong>Edit</strong> untuk mengganti data contoh dengan konten resmi, atau <strong>Hapus</strong> untuk menghilangkannya.</li>
+    </ol>
+    <p><strong>Contoh berita.</strong> Gunakan judul “Contoh – Kegiatan Membaca Bersama”, pilih tanggal, dan isi berita dengan “Ini contoh isi berita untuk melihat tampilan kartu dan halaman detail.” Unggah gambar contoh pada kolom Foto.</p>
+  </div>
+</section>
+
 <div class="stat-grid">
   @foreach (config('admin_menu.seksi') as $k => $m)
     @if (auth('admin')->user()->bolehKonten($k))

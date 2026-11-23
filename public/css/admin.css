@@ -64,6 +64,11 @@ body{font-family:'Plus Jakarta Sans',system-ui,Segoe UI,Arial,sans-serif;backgro
 .card-header{padding:18px 20px;border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;gap:1rem}
 .card-header h2{font-size:.95rem;font-weight:700}
 .card-body{padding:20px;flex:1}
+#panduan-data-dummy{margin-bottom:20px;scroll-margin-top:80px}
+.dummy-guide{font-size:.9rem;line-height:1.65}
+.dummy-guide ol{padding-left:1.4rem;margin-bottom:.8rem}
+.dummy-guide li + li{margin-top:.35rem}
+.dummy-guide a{color:var(--blue);text-decoration:underline}
 
 /* ── Form ── */
 .form-group{margin-bottom:16px}
