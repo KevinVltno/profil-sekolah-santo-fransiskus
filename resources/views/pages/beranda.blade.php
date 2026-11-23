@@ -14,7 +14,7 @@
         </div>
       </div>
       <div class="hero-img">
-        <img src="{{ asset($tumbuh->gambar ?? 'img/logo.png') }}" alt="Logo SD Santo Fransiskus" />
+        <img src="{{ asset(($tumbuh?->gambar && $tumbuh->gambar !== 'img/logo.png') ? $tumbuh->gambar : 'img/sekolah-placeholder.webp') }}" alt="" />
       </div>
     </div>
     <div class="wave"><svg viewBox="0 0 1440 60" preserveAspectRatio="none" width="100%" height="60"><path d="M0,30 C360,60 1080,0 1440,30 L1440,60 L0,60 Z" fill="#ffffff"/></svg></div>
@@ -36,7 +36,7 @@
   @if ($sejarah)
   <section>
     <div class="inner about">
-      <div class="about-img reveal"><img src="{{ asset($sejarah->gambar ?: 'img/logo.png') }}" alt="{{ $sejarah->judul }}" /></div>
+      <div class="about-img reveal"><img src="{{ asset($sejarah->gambar ?: 'img/sekolah-placeholder.webp') }}" alt="{{ $sejarah->judul }}" /></div>
       <div class="reveal">
         <span class="eyebrow">Sejarah Sekolah</span>
         <h2 class="title">{{ $sejarah->judul }}</h2>

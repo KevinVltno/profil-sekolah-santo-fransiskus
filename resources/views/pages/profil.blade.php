@@ -11,7 +11,7 @@
   @if ($sejarah)
   <section>
     <div class="inner about">
-      <div class="about-img reveal"><img src="{{ asset($sejarah->gambar ?: 'img/logo.png') }}" alt="{{ $sejarah->judul }}" /></div>
+      <div class="about-img reveal"><img src="{{ asset($sejarah->gambar ?: 'img/sekolah-placeholder.webp') }}" alt="{{ $sejarah->judul }}" /></div>
       <div class="reveal">
         <span class="eyebrow">Profil &amp; Sejarah</span>
         <h2 class="title">{{ $sejarah->judul }}</h2>
@@ -43,7 +43,7 @@
       <div class="ekskul-grid">
         @foreach ($ekskul as $x)
         <div class="ekskul-card reveal">
-          <img src="{{ asset($x->gambar) }}" alt="{{ $x->judul }}" loading="lazy" />
+          <img src="{{ asset($x->gambar ?: 'img/sekolah-placeholder.webp') }}" alt="{{ $x->judul }}" loading="lazy" />
           <div><h3>{{ $x->judul }}</h3></div>
         </div>
         @endforeach
@@ -60,7 +60,7 @@
         @foreach ($prestasi as $p)
         <div class="prestasi-card reveal">
           <div class="prestasi-img">
-            <img src="{{ asset($p->gambar) }}" alt="{{ $p->judul }}" loading="lazy" />
+            <img src="{{ asset($p->gambar ?: 'img/sekolah-placeholder.webp') }}" alt="{{ $p->judul }}" loading="lazy" />
             @if ($p->tahun)<span class="prestasi-year">{{ $p->tahun }}</span>@endif
             @if ($p->ikon)<span class="prestasi-medal">{{ ikon($p->ikon) }}</span>@endif
           </div>

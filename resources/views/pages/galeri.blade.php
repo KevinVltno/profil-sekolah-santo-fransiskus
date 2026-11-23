@@ -11,6 +11,13 @@
 @endsection
 
 @push('scripts')
-<script>const GALERI = @json($galeri);</script>
+@php
+  $fotoGaleri = $galeri ?: [[
+    'src' => asset('img/sekolah-placeholder.webp'),
+    'alt' => 'Ilustrasi sekolah',
+    'ket' => 'Gambar contoh',
+  ]];
+@endphp
+<script>const GALERI = @json($fotoGaleri);</script>
 <script src="{{ asset('js/galeri.js') }}"></script>
 @endpush

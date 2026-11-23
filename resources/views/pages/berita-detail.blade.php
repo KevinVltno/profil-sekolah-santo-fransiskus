@@ -14,7 +14,7 @@
             <span><i class="fa-solid fa-calendar-days" aria-hidden="true"></i> {{ tanggal_id($b->tanggal) }}</span>
           </div>
           <h1 class="artikel-title">{{ $b->judul }}</h1>
-          <img class="artikel-img" src="{{ asset($b->gambar) }}" alt="{{ $b->judul }}" />
+          <img class="artikel-img" src="{{ asset($b->gambar ?: 'img/sekolah-placeholder.webp') }}" alt="{{ $b->judul }}" />
           <div class="artikel-isi">
             @foreach ($b->paragraf() as $p)<p>{{ $p }}</p>@endforeach
           </div>
@@ -31,7 +31,7 @@
             <h3 class="side-title">Berita Terkini</h3>
             @foreach ($terkini as $x)
             <a class="side-item" href="{{ route('berita.show', $x) }}">
-              <img src="{{ asset($x->gambar) }}" alt="" loading="lazy" />
+              <img src="{{ asset($x->gambar ?: 'img/sekolah-placeholder.webp') }}" alt="" loading="lazy" />
               <span>{{ $x->judul }}</span>
             </a>
             @endforeach

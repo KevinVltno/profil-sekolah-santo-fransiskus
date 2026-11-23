@@ -11,8 +11,8 @@
   @php
     // Jenjang kelas masih statis (tidak diambil dari database)
     $jenjang = collect([
-      ['img/logo.png', 'Kelas Rendah (Kelas 1–3)', 'Siswa dikenalkan pada budaya belajar di sekolah dasar, dengan penguatan membaca, menulis, berhitung, dan kebiasaan baik sehari-hari.'],
-      ['img/logo.png', 'Kelas Tinggi (Kelas 4–6)', 'Siswa mengembangkan kemampuan berpikir, kemandirian, dan tanggung jawab sebagai persiapan melanjutkan ke jenjang berikutnya.'],
+      ['img/sekolah-placeholder.webp', 'Kelas Rendah (Kelas 1–3)', 'Siswa dikenalkan pada budaya belajar di sekolah dasar, dengan penguatan membaca, menulis, berhitung, dan kebiasaan baik sehari-hari.'],
+      ['img/sekolah-placeholder.webp', 'Kelas Tinggi (Kelas 4–6)', 'Siswa mengembangkan kemampuan berpikir, kemandirian, dan tanggung jawab sebagai persiapan melanjutkan ke jenjang berikutnya.'],
     ])->map(fn ($j) => (object) ['gambar' => $j[0], 'judul' => $j[1], 'teks' => $j[2]]);
   @endphp
 
