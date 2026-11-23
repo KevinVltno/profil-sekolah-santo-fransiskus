@@ -6,6 +6,7 @@
     'crumb' => 'Profil Sekolah / Guru & Staff',
     'title' => 'Profil Guru & Staff',
     'desc'  => 'Tenaga pendidik berpengalaman dan berdedikasi untuk mendampingi siswa belajar dan bertumbuh.',
+    'showImage' => false,
   ])
 
   <section class="guru-section">
